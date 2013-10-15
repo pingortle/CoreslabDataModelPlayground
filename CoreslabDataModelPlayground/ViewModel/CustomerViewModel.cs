@@ -25,9 +25,21 @@ namespace CoreslabDataModelPlayground.ViewModel
 
             ID = _random.Next(1000, 9999).ToString();
 
+            _title = this.WhenAnyValue(x => x.Name)
+                .Select(x => x == null || x.Trim() == "" ? "Customer" : x.Trim())
+                .ToProperty(this, x => x.Title);
+
             Ok = new ReactiveCommand(isInputValid, false);
             Ok.Subscribe(_ => HostScreen.Router.Navigate.Execute(new SuccessViewModel(HostScreen)));
         }
+
+        #region Dependent Properties
+        private ObservableAsPropertyHelper<string> _title;
+        public string Title
+        {
+            get { return _title.Value; }
+        }
+        #endregion
 
         #region Boilerplate Properties
         private string _name;

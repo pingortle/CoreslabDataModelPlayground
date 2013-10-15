@@ -7,7 +7,7 @@
                    xmlns:vm="clr-namespace:CoreslabDataModelPlayground.ViewModel">
     <Grid>
         <StackPanel>
-            <Label FontSize="24" HorizontalAlignment="Center">Customer</Label>
+            <Label x:Name="CustomerTitle" FontSize="24" HorizontalAlignment="Center">Customer</Label>
             <Label x:Name="ID" HorizontalAlignment="Center">CustomerID</Label>
             <StackPanel Orientation="Horizontal">
                 <Label>Name:</Label>

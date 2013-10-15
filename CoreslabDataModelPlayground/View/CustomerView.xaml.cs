@@ -33,6 +33,8 @@ namespace CoreslabDataModelPlayground.View
             this.Bind(ViewModel, x => x.Plan, x => x.Plan.Text);
             this.Bind(ViewModel, x => x.ID, x => x.ID.Content);
 
+            this.OneWayBind(ViewModel, x => x.Title, x => x.CustomerTitle.Content);
+
             this.BindCommand(ViewModel, x => x.Ok, x => x.Ok);
         }
 
