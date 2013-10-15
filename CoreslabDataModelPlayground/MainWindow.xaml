@@ -2,10 +2,8 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:rx="clr-namespace:ReactiveUI.Xaml;assembly=ReactiveUI.Xaml"
-        xmlns:local="clr-namespace:CoreslabDataModelPlayground.View"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <!--<local:CustomerView />-->
         <rx:RoutedViewHost Router="{Binding Router}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
     </Grid>
 </Window>

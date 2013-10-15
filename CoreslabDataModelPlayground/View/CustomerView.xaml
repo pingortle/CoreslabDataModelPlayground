@@ -9,17 +9,13 @@
         <StackPanel>
             <Label x:Name="CustomerTitle" FontSize="24" HorizontalAlignment="Center">Customer</Label>
             <Label x:Name="ID" HorizontalAlignment="Center">CustomerID</Label>
-            <StackPanel Orientation="Horizontal">
+            <StackPanel>
                 <Label>Name:</Label>
-                <TextBox Width="200" x:Name="CustomerName"></TextBox>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="CustomerName"></TextBox>
                 <Label>Location:</Label>
-                <TextBox Width="200" x:Name="Location"></TextBox>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="Location"></TextBox>
                 <Label>Plan:</Label>
-                <TextBox Width="200" x:Name="Plan"></TextBox>
+                <TextBox x:Name="Plan"></TextBox>
             </StackPanel>
             <Button x:Name="Ok" HorizontalAlignment="Center">Ok</Button>
         </StackPanel>
